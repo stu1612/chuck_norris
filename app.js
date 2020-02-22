@@ -1,6 +1,6 @@
 // Event Listener
 document.querySelector('.get-jokes').addEventListener('click', getJokes);
-document.querySelector('.get-jokes').addEventListener('touchstart', getJokes);
+// document.querySelector('.get-jokes').addEventListener('touchstart', getJokes);
 
 function getJokes(e){
 
@@ -16,7 +16,7 @@ function getJokes(e){
 
             if(response.type === 'success') {
                 response.value.forEach(function(joke){
-                    output += `<h3>${joke.joke}</h3>`;
+                    output += `<li>${joke.joke}</li>`;
                 });
             } else {
                 output += '<li>Something went wrong</li>'
