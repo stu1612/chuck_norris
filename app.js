@@ -1,5 +1,5 @@
 // Event Listener
-document.querySelector('.get-jokes').addEventListener('click', getJokes);
+document.querySelector('.get-jokes').addEventListener('onclick', getJokes);
 // document.querySelector('.get-jokes').addEventListener('touchstart', getJokes);
 
 function getJokes(e){
